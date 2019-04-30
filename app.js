@@ -3,7 +3,6 @@ const app = express();
 const morgan = require('morgan');
 
 const productRoutes = require('./api/routes/products');
-const orderRoutes = require('./api/routes/orders');
 
 app.use(morgan('dev'));
 
@@ -19,8 +18,7 @@ app.use(function (req, res, next) {
 });
 
 // routes
-app.use('/products', productRoutes);
-app.use('/orders', orderRoutes);
+// FIX: ADD ROUTE MIDDLEWARE
 
 // none of above routes handled request
 app.use((req, res, next) => {
