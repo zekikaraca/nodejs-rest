@@ -18,4 +18,5 @@ db.serialize(function() {
     console.log('Created database tables.');
 });
 
-module.exports = db;
+////////////// FIX //////////////
+// Export db

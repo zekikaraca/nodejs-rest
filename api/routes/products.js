@@ -22,22 +22,22 @@ router.get('/', (req, res, next) => {
 
 // returns a single procuct based on the provided productId
 router.get('/:productId', (req, res, next) => {
-    // FIX: IMPLEMENT LOGIC HERE
+    ////////////// FIX //////////////
 });
 
 // inserts a product
 router.post('/', (req, res, next) => {
-    // FIX: IMPLEMENT LOGIC HERE
+    ////////////// FIX //////////////
 });
 
 // updates a product
 router.patch('/:productId', (req, res, next) => {
-    // FIX: IMPLEMENT LOGIC HERE
+    ////////////// FIX //////////////
 });
 
 // deletes a product
 router.delete('/:productId', (req, res, next) => {
-    // FIX: IMPLEMENT LOGIC HERE
+    ////////////// FIX //////////////
 });
 
 

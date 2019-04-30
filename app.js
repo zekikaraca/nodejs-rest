@@ -4,11 +4,13 @@ const morgan = require('morgan');
 
 const productRoutes = require('./api/routes/products');
 
+// Middleware: HTTP request logging
 app.use(morgan('dev'));
 
+// Middleware that parses incoming requests with JSON payloads
 app.use(express.json());
 
-// Chained middleware to log some stuff (just for playing around)
+// Middleware (chained) to log some stuff (just for playing around)
 app.use(function (req, res, next) {
     console.log('Request URL:', req.originalUrl);
     next();
@@ -17,20 +19,14 @@ app.use(function (req, res, next) {
     next();
 });
 
-// routes
-// FIX: ADD ROUTE MIDDLEWARE
-
-// none of above routes handled request
-app.use((req, res, next) => {
-    const error = new Error();
-});
+////////////// FIX //////////////
+// Add middleware for /products route
+// app.use(...);
 
 
-// start the server in the port 3000 !
-// we are not using the default express app because under the hood it uses http to create the server
-// and we might want to serve https too!
-// app.listen(3000, function () {
-//     console.log('Example app listening on port 3000.');
-// });
+////////////// FIX //////////////
+// Nice to have: Add custom error-handling middleware
 
-module.exports = app;
+
+////////////// FIX //////////////
+// Export app
