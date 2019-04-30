@@ -4,11 +4,7 @@
 `npm install`
 
 ## Start
-`node server.js`
-
-Or using nodemon: 
-
-`nodemon server.js` 
+`npm start` 
 
 ## Database
 We're using [SQLITE3](https://www.sqlite.org/draft/version3.html) as a database. 
@@ -26,3 +22,9 @@ We're using [SQLITE3](https://www.sqlite.org/draft/version3.html) as a database.
 	"item": "laptop",
 	"price": 1355
 }
+
+
+### Files to Fix
+- db.js
+- app.js
+- products.js
